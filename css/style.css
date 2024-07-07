@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+html {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FCF9F2;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* fv */
+.fv-img {
+  background-image: url(../image/kv-1.png);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 540px;
+}
+
+/* Concept */
+
+.section-title1 {
+  font-size: 24px;
+  margin-top: 64px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #11361F;
+}
+
+.concept-img {
+  text-align: center;
+  margin-top: 24px;
+  padding: 0 18px 0 48px;
+}
+
+.main-text {
+  font-size: 28px;
+  letter-spacing: 0.2rem;
+  padding: 16px 18px 0;
+  color: #11361F;
+
+}
+
+.main-title {
+  font-size: 64px;
+  letter-spacing: 0.2rem;
+  padding: 0 18px;
+  color: #11361F;
+}
+
+.section-text {
+  padding: 16px 18px 0;
+}
+
+/* Menu */
+.section-title2 {
+  font-size: 24px;
+  margin-top: 64px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #11361F;
+}
+
+.menu-img {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.menu-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+  padding: 0 18px;
+}
+
+.menu-name {
+  font-size: 26px;
+  letter-spacing: 0.05em;
+}
+
+.menu-price {
+  font-weight: bold;
+}
+
+/* second img */
+.second-img {
+  background-image: url(../image/separate.png);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+}
+
+/* shop */
+.section.back {
+  background: #fff;
+}
+
+.section-title3 {
+  font-size: 24px;
+  padding-top: 64px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #11361F;
+}
+
+.shop-img {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.shop-text {
+  margin: 24px 0 64px 0;
+}
+
+.shop-name {
+  font-family: sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  padding: 0 18px;
+}
+
+.text-add {
+  margin-top: 16px;
+  padding: 0 18px;
+}
+
+/* footer */
+
+
+.footer-img {
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 12px;
+  padding: 24px;
+  line-height: 2.6;
+  letter-spacing: 0.2em;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  letter-spacing: 0.1em;
+}
+
+.footer-2 {
+  margin-top: 64px;
+}
+
+.copyright {
+  /* margin-top: 64px; */
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #FCF9F2;
+  background: #11361F;
+  line-height: 64px;
+
+}
+
+/* media */
+@media (min-width:768px) {
+  .fv-img {
+    background-image: url(../image/kv.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 768px;
+  }
+
+  /* Concept */
+  .concept-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .concept-img {
+    width: 50%;
+  }
+
+  .concept-text {
+    width: 50%;
+  }
+
+  /* Menu */
+  .menu-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* sv */
+  .second-img {
+    height: 496px;
+  }
+
+  /* shop */
+  .shop-inner {
+    display: flex;
+    padding-bottom: 64px;
+  }
+
+  .shop-img {
+    width: 50%;
+  }
+
+  .shop-text {
+    width: 50%;
+    padding-top: 16px;
+  }
+
+  /* footer */
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .footer-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
+
+  .footer-2 {
+    margin-top: 0;
+  }
+
+  @media (min-width:1024px) {
+    .concept-inner {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .menu-inner {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .shop-inner {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+  }
+
+
+}
